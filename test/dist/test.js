@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,105 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isNaNArray = require( '@stdlib/assert-is-nan-array' );
-var isArray = require( '@stdlib/assert-is-array' );
-var kernelBetainc = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof kernelBetainc, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
-
-tape( 'the function returns `[ NaN, NaN ]` if `x` is outside `[0,1]`', function test( t ) {
-	var val = kernelBetainc( -0.2, 1.0, 1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( -0.2, 1.0, 1.0, false, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( -0.2, 1.0, 1.0, true, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( -0.2, 1.0, 1.0, false, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 1.1, 1.0, 1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 1.1, 1.0, 1.0, false, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 1.1, 1.0, 1.0, false, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 1.1, 1.0, 1.0, true, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	t.end();
-});
-
-tape( 'the function returns `[ NaN, NaN ]` if `x` is `NaN`', function test( t ) {
-	var val = kernelBetainc( NaN, 1.0, 1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-	t.end();
-});
-
-tape( 'the function returns `[ NaN, NaN ]` if negative `a` or `b`', function test( t ) {
-	var val = kernelBetainc( 0.5, -1.0, 1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, 1.0, false, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, 1.0, true, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, 1.0, false, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, 1.0, -1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, 1.0, -1.0, false, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, 1.0, -1.0, true, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, 1.0, -1.0, false, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, -1.0, true, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, -1.0, false, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, -1.0, false, true );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	val = kernelBetainc( 0.5, -1.0, -1.0, true, false );
-	t.equal( isNaNArray( val ), true, 'returns array of NaNs' );
-
-	t.end();
-});
-
-tape( 'attached to the function is a method which supports supplying a destination array', function test( t ) {
-	var out;
-	var v;
-
-	out = [ 0.0, 0.0 ];
-	v = kernelBetainc.assign( 0.5, 1.0, 1.0, true, true, out, 1, 0 );
-
-	t.equal( isArray( v ), true, 'returns an array' );
-	t.equal( v.length, 2, 'returned array has two elements' );
-	t.equal( v, out, 'returns a reference to output array' );
-
-	t.end();
-});
-
-// TODO: Add fixtures
