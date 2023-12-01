@@ -71,13 +71,13 @@
     "@stdlib/math-base-special-sqrt": "^0.1.1",
     "@stdlib/math-base-tools-continued-fraction": "^0.1.0",
     "@stdlib/math-base-tools-sum-series": "^0.1.0",
-    "@stdlib/types": "^0.1.0",
+    "@stdlib/types": "^0.2.0",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.1.1",
     "@stdlib/assert-is-nan-array": "^0.1.0",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
