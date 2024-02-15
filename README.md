@@ -48,13 +48,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-kernel-betainc/tags). For example,
+
+```javascript
 import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.0-deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
 ```
 
 #### kernelBetainc( x, a, b, regularized, upper )
@@ -134,7 +139,7 @@ The `offset` parameter specifies the index of the first output array element, an
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.0-deno/mod.js';
+import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
 
 var out;
 var i;
