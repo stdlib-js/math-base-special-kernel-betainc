@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
+import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.1-deno/mod.js';
 ```
 
 #### kernelBetainc( x, a, b, regularized, upper )
@@ -134,7 +134,7 @@ The `offset` parameter specifies the index of the first output array element, an
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@deno/mod.js';
+import kernelBetainc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-betainc@v0.2.1-deno/mod.js';
 
 var out;
 var i;
