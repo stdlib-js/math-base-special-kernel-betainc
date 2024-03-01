@@ -52,7 +52,7 @@
     "@stdlib/math-base-special-asin": "^0.2.1",
     "@stdlib/math-base-special-beta": "^0.2.1",
     "@stdlib/math-base-special-binomcoef": "^0.2.1",
-    "@stdlib/math-base-special-exp": "^0.2.1",
+    "@stdlib/math-base-special-exp": "^0.2.2",
     "@stdlib/math-base-special-expm1": "^0.2.1",
     "@stdlib/math-base-special-factorial": "^0.2.1",
     "@stdlib/math-base-special-floor": "^0.2.1",
@@ -77,7 +77,7 @@
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.2.1",
     "@stdlib/assert-is-nan-array": "^0.2.1",
-    "@stdlib/random-base-randu": "^0.2.0",
+    "@stdlib/random-base-randu": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
