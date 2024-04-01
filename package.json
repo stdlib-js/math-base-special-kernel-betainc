@@ -55,7 +55,7 @@
     "@stdlib/math-base-special-exp": "^0.2.2",
     "@stdlib/math-base-special-expm1": "^0.2.1",
     "@stdlib/math-base-special-factorial": "^0.2.1",
-    "@stdlib/math-base-special-floor": "^0.2.1",
+    "@stdlib/math-base-special-floor": "^0.2.2",
     "@stdlib/math-base-special-gamma": "^0.2.1",
     "@stdlib/math-base-special-gamma-delta-ratio": "^0.2.1",
     "@stdlib/math-base-special-gamma-lanczos-sum-expg-scaled": "^0.2.1",
