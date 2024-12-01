@@ -71,7 +71,7 @@
     "@stdlib/math-base-special-sqrt": "^0.2.2",
     "@stdlib/math-base-tools-continued-fraction": "^0.2.2",
     "@stdlib/math-base-tools-sum-series": "^0.2.2",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
   },
   "devDependencies": {
