@@ -72,7 +72,8 @@
     "@stdlib/math-base-tools-continued-fraction": "^0.2.2",
     "@stdlib/math-base-tools-sum-series": "^0.2.2",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.2.2",
