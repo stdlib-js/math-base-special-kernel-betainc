@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-07)
+## Unreleased (2025-06-27)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`6471b8e`](https://github.com/stdlib-js/stdlib/commit/6471b8e01fdce8657278f83e0921faef23e6622e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`90d0d11`](https://github.com/stdlib-js/stdlib/commit/90d0d1193f14ab787e2d75d6f862d03e2105006e) - **chore:** update random value generation and test messages [(#6346)](https://github.com/stdlib-js/stdlib/pull/6346) _(by Harsh)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
