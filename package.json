@@ -14,11 +14,14 @@
     }
   ],
   "main": "./lib",
+  "gypfile": false,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -37,6 +40,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/constants-float32-smallest-normal": "^0.2.3",
     "@stdlib/constants-float64-e": "^0.2.3",
     "@stdlib/constants-float64-eps": "^0.2.3",
     "@stdlib/constants-float64-gamma-lanczos-g": "^0.2.3",
@@ -68,18 +72,29 @@
     "@stdlib/math-base-special-min": "^0.2.4",
     "@stdlib/math-base-special-minabs": "^0.2.4",
     "@stdlib/math-base-special-pow": "^0.3.1",
+    "@stdlib/math-base-special-powm1": "^0.3.2",
     "@stdlib/math-base-special-sqrt": "^0.2.3",
     "@stdlib/math-base-tools-continued-fraction": "^0.2.3",
     "@stdlib/math-base-tools-sum-series": "^0.2.3",
+    "@stdlib/napi-argv": "^0.2.3",
+    "@stdlib/napi-argv-bool": "^0.1.1",
+    "@stdlib/napi-argv-double": "^0.2.2",
+    "@stdlib/napi-argv-float64array": "^0.2.3",
+    "@stdlib/napi-export": "^0.3.1",
     "@stdlib/types": "^0.5.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
+    "@stdlib/utils-library-manifest": "^0.2.4"
   },
   "devDependencies": {
+    "@stdlib/array-float64": "^0.2.3",
+    "@stdlib/assert-is-almost-same-value": "^0.1.1",
     "@stdlib/assert-is-array": "^0.2.3",
     "@stdlib/assert-is-nan-array": "^0.2.3",
+    "@stdlib/math-base-special-ldexp": "^0.2.5",
     "@stdlib/random-array-uniform": "^0.2.2",
     "@stdlib/random-base-randu": "^0.2.3",
     "@stdlib/string-format": "^0.2.3",
+    "@stdlib/utils-try-require": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
