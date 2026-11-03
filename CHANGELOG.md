@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-21)
+## Unreleased (2026-11-03)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`b7ad899`](https://github.com/stdlib-js/stdlib/commit/b7ad8998c9f914b92976cf5c4cdc860572bd87dd) - **chore:** clean-up [(#16437)](https://github.com/stdlib-js/stdlib/pull/16437) _(by Philipp Burckhardt)_
 -   [`d5da0cb`](https://github.com/stdlib-js/stdlib/commit/d5da0cbb9558361e16b90a5351c04bf4cdc917f7) - **docs:** add introductory text to READMEs [(#14697)](https://github.com/stdlib-js/stdlib/pull/14697) _(by Karan Anand)_
 -   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`6512a7a`](https://github.com/stdlib-js/stdlib/commit/6512a7a5ac20f3efb7d40d65085cc74f18f6a1ba) - **feat:** add C implementation of `math/base/special/kernel-betainc` [(#10279)](https://github.com/stdlib-js/stdlib/pull/10279) _(by Nirmal Jyoti Biswas, Gunj Joshi, Neeraj Pathak, Philipp Burckhardt, stdlib-bot)_
